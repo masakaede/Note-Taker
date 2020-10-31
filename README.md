@@ -21,7 +21,7 @@ An application that can be used to write, save, and delete notes. This applicati
 
 ## Usage
 1.	Type the following code at terminal to run the appplication locally
-	>  node index.js
+	>  node server.js
 2.	The following are the main function of this app
 	-	Create new notes
 	-	View previously created notes
