@@ -27,4 +27,15 @@ module.exports = function (app) {
         res.json(newNote)
     });
 
+    // delete a note
+    app.delete('/api/notes/:id', function (req, res) {
+
+        for (var i = 0; i < notes.length; i++) {
+            if (notes[i].id === req.params.id) {
+                console.log(`${notes[i].title} deleted from the note`)
+                notes.splice(i, 1)
+            }
+        }
+        res.json(notes)
+    });
 }
